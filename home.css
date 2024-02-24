@@ -1,0 +1,276 @@
+@media only screen and (max-width: 768px){
+    body {
+        background: #FCE7DA;
+        text-align: center;
+    }
+
+    #mobile{
+        display: flex;
+        visibility: initial;
+        text-align: center;
+        padding-top: 25px;
+        color: var(--dark-gray, #333);
+        font-family: Lato;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 3.125rem; /* 178.571% */
+        margin: auto;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .home-intro{
+        display: none;
+    }
+
+    .projects{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px){
+
+
+/* Home Page */
+body {
+    background: #FCE7DA;
+    text-align: center;
+}
+
+#mobile{
+    display: none;
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #FCE7DA;
+    z-index: 1;
+    transition: transform 0.5s;
+}
+
+.sticky-header {
+    transform: translateY(-150px);
+}
+
+#nav-line {
+    display: block;
+    background-color: #2C2F83;
+    border-radius: 1px;
+    height: 1px;
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #2C2F83;
+    font-family: Engagement;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+/* Remove default list styles */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 2px;
+    margin-bottom: 0px;
+}
+
+/* Make list items display inline */
+.nav-menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #2C2F83;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Body */
+.home-intro {
+    display: block;
+    width: 50%;
+    text-align: left;
+    margin: 100px auto;
+}
+
+#intro {
+    padding-top: 50px;
+    color: var(--dark-gray, #333);
+    font-family: Lato;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 3.125rem; /* 178.571% */
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+#dev, #gd {
+    color: #2C2F83;
+}
+
+#college {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: Lato;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 3.125rem; /* 312.5% */
+}
+
+#college a {
+    color: #333;
+    text-decoration: none;
+}
+
+#iitb {
+    color: #2C2F83;
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+.contact a {
+    color: #333;
+    padding-right: 20px;
+}
+
+.heading_project {
+    display: block;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    gap: 15px 15px;
+    font-size: 30px;
+    text-align: left;
+}
+
+#projects_head {
+    display: block;
+    width: 100%;
+    color: #2C2F83;
+    font-size: 2rem;
+    font-family: poppins;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#project-line {
+    display: block;
+    background-color: #2C2F83;
+    border-radius: 1px;
+    height: 1px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+.project-title {
+    display: block;
+    width: 50%;
+    text-align: left;
+    margin: 10px auto 20px auto;
+    color: var(--dark-gray, #333);
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-weight: medium;
+    line-height: 3.125rem; /* 178.571% */
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 0;
+    font-stretch: expanded;
+}
+
+.column {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50%;
+    display: flex;
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    padding-bottom: 15px;
+    font-size: 0.1rem;
+    box-shadow: 0 2px 4px 0 rgba(58, 58, 58, 0.2), 0 3px 10px 0 rgba(54, 54, 54, 0.19);
+}
+
+.column img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.column:hover {
+    transform: scale(0.99);
+}
+
+.project-link{
+    text-decoration: none;
+}
+
+.project-link :hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    display: block;
+    width: 50%;
+    margin: 50px auto 80px auto;
+}
+
+#foot-line {
+    display: block;
+    background-color: #2C2F83;
+    border-radius: 1px;
+    height: 1px;
+    width: 100%;
+    margin: auto;
+}
+
+footer .contact {
+    margin-top: 20px;
+    float: right;
+    font-size: 16px;
+}
+
+#github {
+    padding-right: 0;
+}
+
+#copyright {
+    font-family: "Lato";
+    font-size: 14px;
+    float: left;
+}
+}
